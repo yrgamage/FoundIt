@@ -14,6 +14,7 @@ import MuiCard from '@mui/material/Card';
 import { styled } from '@mui/material/styles';
 
 const Card = styled(MuiCard)(({ theme }) => ({
+  backgroundColor: '#D4C9BE',
   display: 'flex',
   flexDirection: 'column',
   alignSelf: 'center',
@@ -35,9 +36,7 @@ const SignUpContainer = styled(Stack)(({ theme }) => ({
   [theme.breakpoints.up('sm')]: {
     padding: theme.spacing(4),
   },
-  backgroundImage:
-    'radial-gradient(ellipse at 50% 50%, hsl(210, 100%, 97%), hsl(0, 0%, 100%))',
-  backgroundRepeat: 'no-repeat',
+  
 }));
 
 export default function SignUp() {
@@ -103,6 +102,7 @@ export default function SignUp() {
       <SignUpContainer direction="column" justifyContent="center">
         <Card variant="outlined">
           <Typography
+            color='#123458'
             component="h1"
             variant="h4"
             sx={{ width: '100%', fontSize: 'clamp(2rem, 10vw, 2.15rem)', textAlign: 'center' }}
@@ -159,6 +159,7 @@ export default function SignUp() {
               label="I agree to the terms and conditions"
             />
             <Button
+            sx={{ backgroundColor: '#123458',":hover": { backgroundColor: '#E8AA42' }}}
               type="submit"
               fullWidth
               variant="contained"

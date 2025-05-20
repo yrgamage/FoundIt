@@ -3,19 +3,28 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import SignIn from '../signIn/SignIn'
 import SignUp from '../signUp/SignUp'
+import LostItemCard from '../components/LostItemCard'
 
 function HomePage() {
   return (
-  
+    <>
+     <Navbar />
     <div className='bg-background'>
-      <Navbar />
-      {/* Add your home page content here */}
-      <h1 >Welcome to the Home Page</h1>
-      <p>This is a simple home page component.</p>
-      <SignIn />
+      <LostItemCard 
+        title="Lost Wallet"
+        imageUrl="https://example.com/wallet.jpg"
+        date="2024-06-01"
+        status="lost"
+      />
+    
       <SignUp />
-      <Footer />
+      <SignIn/>
+      
     </div>
+    <Footer />
+    </>
+  
+    
   )
 }
 

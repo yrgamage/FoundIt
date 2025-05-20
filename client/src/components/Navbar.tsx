@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { 
   Button,
@@ -26,7 +25,7 @@ const Navbar = () => {
       position="sticky" 
       elevation={0} 
       sx={{ 
-        backgroundColor: 'background.paper',
+        backgroundColor: '#123458',
         borderBottom: '1px solid',
         borderColor: 'divider',
         zIndex: 1200
@@ -54,12 +53,13 @@ const Navbar = () => {
           <Box 
             component="span" 
             sx={{ 
+              color: '#D4C9BE',
               fontSize: '1.25rem', 
               fontWeight: 'bold',
               letterSpacing: 0.5
             }}
           >
-            MyApp
+            FoundIt !
           </Box>
         </Box>
 
@@ -71,21 +71,21 @@ const Navbar = () => {
           <MenuItem 
             component={StyledLink} 
             to="/"
-            sx={{ fontWeight: 500 }}
+            sx={{ fontWeight: 500,color: '#F1EFEC' }}
           >
             Home
           </MenuItem>
           <MenuItem 
             component={StyledLink} 
             to="/about"
-            sx={{ fontWeight: 500 }}
+            sx={{ fontWeight: 500,color: '#F1EFEC' }}
           >
             About
           </MenuItem>
           <MenuItem 
             component={StyledLink} 
             to="/contact"
-            sx={{ fontWeight: 500 }}
+            sx={{ fontWeight: 500,color: '#F1EFEC' }}
           >
             Contact
           </MenuItem>
@@ -102,18 +102,22 @@ const Navbar = () => {
             to="/signin" 
             variant="outlined"
             sx={{ 
+              color: '#E8AA42',
+              borderColor: '#E8AA42',
               textTransform: 'none',
               px: 3,
               fontWeight: 500
             }}
           >
-            Sign In
+            Dashboard
           </Button>
           <Button 
             component={Link} 
             to="/signup"
             variant="contained"
             sx={{ 
+                backgroundColor: '#E8AA42',
+                color: '#123458',
               textTransform: 'none',
               px: 3,
               fontWeight: 500,

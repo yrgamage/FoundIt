@@ -1,4 +1,3 @@
-import React from "react";
 import { 
   Box,
   Container,
@@ -14,13 +13,11 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
+        backgroundColor: '#123458',
         py: 5,
         px: 2,
         mt: 'auto',
-        backgroundColor: (theme) => 
-          theme.palette.mode === 'light'
-            ? theme.palette.grey[100]
-            : theme.palette.grey[800],
+        
       }}
     >
       <Container maxWidth="lg">
@@ -35,7 +32,7 @@ const Footer = () => {
           }}
         >
           {/* Quick Links */}
-          <Box sx={{ minWidth: 120 }}>
+          <Box sx={{ minWidth: 120,color: '#F1EFEC' }}>
             <Typography variant="h6" gutterBottom>
               Quick Links
             </Typography>
@@ -43,7 +40,7 @@ const Footer = () => {
               <Link 
                 component={RouterLink} 
                 to="/" 
-                color="inherit"
+                color="#F1EFEC"
                 underline="hover"
               >
                 Home
@@ -51,7 +48,7 @@ const Footer = () => {
               <Link 
                 component={RouterLink} 
                 to="/about" 
-                color="inherit"
+                color="#F1EFEC"
                 underline="hover"
               >
                 About
@@ -59,7 +56,7 @@ const Footer = () => {
               <Link 
                 component={RouterLink} 
                 to="/contact" 
-                color="inherit"
+                color="#F1EFEC"
                 underline="hover"
               >
                 Contact
@@ -68,7 +65,7 @@ const Footer = () => {
           </Box>
 
           {/* Legal */}
-          <Box sx={{ minWidth: 120 }}>
+          <Box sx={{ minWidth: 120,color: '#F1EFEC' }}>
             <Typography variant="h6" gutterBottom>
               Legal
             </Typography>
@@ -83,34 +80,37 @@ const Footer = () => {
           </Box>
 
           {/* Contact Info */}
-          <Box sx={{ minWidth: 120 }}>
+          <Box sx={{ minWidth: 120,color: '#F1EFEC' }}>
             <Typography variant="h6" gutterBottom>
               Contact Us
             </Typography>
             <Stack spacing={1}>
               <Typography variant="body2">
-                email@example.com
+                yrgamage28@gmail.com
               </Typography>
               <Typography variant="body2">
-                +1 (123) 456-7890
+                +94 (76) 634-5868
               </Typography>
             </Stack>
           </Box>
 
           {/* Social Media */}
-          <Box sx={{ minWidth: 120 }}>
+          <Box sx={{ minWidth: 120,color: 'white' }}>
             <Typography variant="h6" gutterBottom>
               Follow Us
             </Typography>
             <Stack direction="row" spacing={2}>
-              <Link href="#" color="inherit">
-                Twitter
+              <Link href="https://www.linkedin.com/in/yoshani-gamage" color="#F1EFEC">
+                LinkdIn
               </Link>
-              <Link href="#" color="inherit">
-                Facebook
+              <Link href="https://github.com/YoshaniGamage" color="#F1EFEC">
+                GitHub
               </Link>
-              <Link href="#" color="inherit">
+              <Link href="https://www.instagram.com/yoshani_gamage/" color="#F1EFEC">
                 Instagram
+              </Link>
+              <Link href="https://web.facebook.com/yoshani.gamage.2025/" color="#F1EFEC">
+                Facebook
               </Link>
             </Stack>
           </Box>
@@ -118,7 +118,7 @@ const Footer = () => {
 
         <Divider sx={{ my: 4 }} />
 
-        <Typography variant="body2" color="text.secondary" align="center">
+        <Typography variant="body2" color="white" align="center">
           © {new Date().getFullYear()} MyApp. All rights reserved.
         </Typography>
       </Container>

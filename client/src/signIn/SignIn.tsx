@@ -16,6 +16,7 @@ import ForgotPassword from './ForgetPassword';
 // import { SitemarkIcon } from './components/CustomIcons';
 
 const Card = styled(MuiCard)(({ theme }) => ({
+  backgroundColor: '#D4C9BE',
   display: 'flex',
   flexDirection: 'column',
   alignSelf: 'center',
@@ -28,10 +29,6 @@ const Card = styled(MuiCard)(({ theme }) => ({
   },
   boxShadow:
     'hsla(220, 30%, 5%, 0.05) 0px 5px 15px 0px, hsla(220, 25%, 10%, 0.05) 0px 15px 35px -5px',
-  ...theme.applyStyles('dark', {
-    boxShadow:
-      'hsla(220, 30%, 5%, 0.5) 0px 5px 15px 0px, hsla(220, 25%, 10%, 0.08) 0px 15px 35px -5px',
-  }),
 }));
 
 const SignInContainer = styled(Stack)(({ theme }) => ({
@@ -47,13 +44,7 @@ const SignInContainer = styled(Stack)(({ theme }) => ({
     position: 'absolute',
     zIndex: -1,
     inset: 0,
-    backgroundImage:
-      'radial-gradient(ellipse at 50% 50%, hsl(210, 100%, 97%), hsl(0, 0%, 100%))',
-    backgroundRepeat: 'no-repeat',
-    ...theme.applyStyles('dark', {
-      backgroundImage:
-        'radial-gradient(at 50% 50%, hsla(210, 100%, 16%, 0.5), hsl(220, 30%, 5%))',
-    }),
+    
   },
 }));
 
@@ -118,6 +109,7 @@ export default function SignIn() {
         <Card variant="outlined">
           {/* <SitemarkIcon /> */}
           <Typography
+          color='#123458'
             component="h1"
             variant="h4"
             sx={{ width: '100%', fontSize: 'clamp(2rem, 10vw, 2.15rem)' }}
@@ -174,6 +166,7 @@ export default function SignIn() {
             />
             <ForgotPassword open={open} handleClose={handleClose} />
             <Button
+              sx={{ backgroundColor: '#123458',":hover": { backgroundColor: '#E8AA42' }}}
               type="submit"
               fullWidth
               variant="contained"
