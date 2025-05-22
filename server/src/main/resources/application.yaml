@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://yrgamage28:1234567@founditcluster.argbnbg.mongodb.net/?retryWrites=true&w=majority&appName=FoundItCluster
+      database: FoundIt-Database
+
