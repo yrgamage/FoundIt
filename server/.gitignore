@@ -4,11 +4,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### Ignore Environment Config ###
-.env
-D:\FoundIt\server\src\main\resources\application.yaml
-
-
 ### STS ###
 .apt_generated
 .classpath
@@ -36,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#exclude specific .yaml files (e.g., config.yaml)
+application.yaml
