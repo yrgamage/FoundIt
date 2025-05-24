@@ -4,6 +4,11 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Ignore Environment Config ###
+.env
+D:\FoundIt\server\src\main\resources\application.yaml
+
+
 ### STS ###
 .apt_generated
 .classpath
